@@ -66,11 +66,17 @@ const personJsonLd = {
   name: SITE_NAME,
   alternateName: FULL_NAME,
   url: SITE_URL,
+  image: `${SITE_URL}/doug-toomay-douglas-toomay-headshot-white.jpeg`,
   jobTitle: JOB_TITLE,
   description,
   worksFor: {
     "@type": "Organization",
     name: "Bernstein-Rein Advertising",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kansas City",
+      addressRegion: "MO",
+    },
   },
   alumniOf: {
     "@type": "CollegeOrUniversity",
@@ -97,11 +103,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
         <div className="fixed inset-0 -z-10">
           <img
-            src="/hero-placeholder.svg"
+            src="/kansas-city-background.png"
             alt=""
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/45" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/62 to-black/80" />
         </div>
         <Nav />
         {children}
