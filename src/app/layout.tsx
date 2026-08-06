@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  themeColor: "#18181b",
+  colorScheme: "dark",
+};
 
 const title = `${SITE_NAME} | ${FULL_NAME}`;
 const description = `${SITE_NAME} (${FULL_NAME}) — ${JOB_TITLE}. Official portfolio and professional profile.`;
