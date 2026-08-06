@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+import { FULL_NAME, JOB_TITLE, SITE_NAME } from "@/lib/site";
+
+export const metadata: Metadata = {
+  description: `${SITE_NAME} (${FULL_NAME}) — ${JOB_TITLE}. Official portfolio and professional profile.`,
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center">
@@ -9,6 +19,7 @@ export default function Home() {
         />
         <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
           Hi, I&apos;m Doug Toomay
+          <span className="sr-only"> (Douglas Toomay)</span>
         </h1>
         <p className="text-sm font-medium tracking-[0.2em] text-white/80 sm:text-base">
           VICE PRESIDENT, GROUP ACCOUNT DIRECTOR
