@@ -13,6 +13,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center">
+      <div className="fixed inset-0 -z-10">
+        <img
+          src="/kansas-city-background.png"
+          alt=""
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/62 to-black/80" />
+      </div>
       <main className="flex w-full max-w-3xl flex-col items-center gap-6 px-8 py-32 text-center">
         <img
           src="/doug-toomay-douglas-toomay-headshot-white.jpeg"

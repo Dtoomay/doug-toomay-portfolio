@@ -101,14 +101,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: toJsonLd(personJsonLd) }}
         />
-        <div className="fixed inset-0 -z-10">
-          <img
-            src="/kansas-city-background.png"
-            alt=""
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/62 to-black/80" />
-        </div>
+        <div className="fixed inset-0 -z-10 bg-zinc-900" />
         <Nav />
         {children}
         <Footer />
