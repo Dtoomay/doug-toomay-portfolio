@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+import { FULL_NAME, JOB_TITLE, SITE_NAME } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: `Services offered by ${SITE_NAME} (${FULL_NAME}), ${JOB_TITLE}.`,
+  alternates: {
+    canonical: "/services",
+  },
+};
+
 export default function Services() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center">

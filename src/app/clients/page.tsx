@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+import { FULL_NAME, SITE_NAME } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Clients",
+  description: `Clients of ${SITE_NAME} (${FULL_NAME}).`,
+  alternates: {
+    canonical: "/clients",
+  },
+};
+
 export default function Clients() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center">

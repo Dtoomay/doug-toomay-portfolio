@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+import { FULL_NAME, JOB_TITLE, SITE_NAME } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: `Learn more about ${SITE_NAME} (${FULL_NAME}), ${JOB_TITLE}.`,
+  alternates: {
+    canonical: "/about",
+  },
+};
+
 export default function About() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center">
@@ -6,7 +17,7 @@ export default function About() {
           About
         </h1>
         <p className="max-w-md text-lg leading-8 text-white/80">
-          About content coming soon.
+          Douglas &ldquo;Doug&rdquo; Toomay — about content coming soon.
         </p>
       </main>
     </div>

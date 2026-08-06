@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+import { FULL_NAME, SITE_NAME } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: `Get in touch with ${SITE_NAME} (${FULL_NAME}).`,
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 export default function Contact() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center">
