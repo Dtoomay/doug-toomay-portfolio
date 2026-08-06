@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import { FULL_NAME, JOB_TITLE, SITE_NAME, SITE_URL } from "@/lib/site";
+import { FULL_NAME, JOB_TITLE, SITE_NAME, SITE_URL, SOCIAL_LINKS } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -61,6 +62,7 @@ const personJsonLd = {
   url: SITE_URL,
   jobTitle: JOB_TITLE,
   description,
+  sameAs: SOCIAL_LINKS.map((link) => link.url),
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -84,6 +86,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </div>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
