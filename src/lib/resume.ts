@@ -157,13 +157,6 @@ export const BOARD_COMMUNITY = [
     description:
       "Advised university leadership on marketing education, industry relevance, and preparing students for successful business careers. Supported connections between academic programming and the evolving needs of employers and marketing leaders.",
   },
-  {
-    org: "Giving the Basics",
-    role: "Volunteer Engagement",
-    dates: undefined,
-    description:
-      "Participated in a holiday packaging event through Bernstein-Rein, gaining firsthand appreciation for the organization's work to provide essential hygiene products and restore dignity for individuals and families facing financial hardship.",
-  },
 ] as const;
 
 export const EDUCATION = {
