@@ -5,9 +5,9 @@
 export const SUMMARY = {
   headline: "Executive Leader, Strategic Advisor, and Community Advocate",
   short:
-    "Doug Toomay is Vice President, Group Account Director at Bernstein-Rein Advertising in Kansas City, with more than 25 years of experience in marketing, business development, strategic planning, and organizational leadership.",
+    "Doug Toomay (Douglas Toomay) is Vice President, Group Account Director at Bernstein-Rein Advertising in Kansas City, with more than 25 years of experience in marketing, business development, strategic planning, and organizational leadership.",
   paragraphs: [
-    "Doug Toomay is Vice President, Group Account Director at Bernstein-Rein Advertising, where he leads complex client relationships, cross-functional teams, and growth initiatives across a range of industries. Across two periods with the agency, he has nearly 12 years of combined service at Bernstein-Rein and more than 25 years of experience in marketing, business development, strategic planning, and organizational leadership.",
+    "Doug Toomay (Douglas Toomay) is Vice President, Group Account Director at Bernstein-Rein Advertising, where he leads complex client relationships, cross-functional teams, and growth initiatives across a range of industries. Across two periods with the agency, he has nearly 12 years of combined service at Bernstein-Rein and more than 25 years of experience in marketing, business development, strategic planning, and organizational leadership.",
     "Throughout his career, Doug has worked with national brands and organizations in financial services, insurance, healthcare, technology, consumer products, and professional services. His experience includes helping leaders clarify business priorities, align stakeholders, strengthen customer relationships, launch new brands and offerings, and translate strategy into measurable action. He is known for bringing together strategic thinking, creativity, analytics, and practical execution while building trusted relationships with executives, clients, and team members.",
     "Doug's professional background includes leadership roles with Bernstein-Rein, Lockton Companies, Hallmark, Cerner Corporation, and DataCore Marketing, which was acquired by KBM Group/WPP. He has led major brand and growth initiatives, managed multimillion-dollar client relationships, supported organizational change, and guided teams through high-stakes decisions and complex business challenges. His work has consistently required sound judgment, clear communication, strategic advisory and stakeholder leadership, budget stewardship, and the ability to build alignment across people with different priorities and perspectives.",
     "In addition to his professional experience, Doug previously served on the Kansas State University College of Business Administration Marketing Advisory Board from 2017 to 2020. In that role, he worked with university leadership and fellow business professionals to help strengthen marketing education and better prepare students for their careers. He also values mentoring emerging professionals and helping others build confidence, perspective, and leadership skills.",
@@ -62,7 +62,10 @@ export const JOBS: Job[] = [
     company: "Bernstein-Rein Advertising",
     location: "Kansas City, MO",
     positions: [
-      { title: "Vice President, Group Account Director", dates: "February 2017–Present" },
+      {
+        title: "Vice President, Group Account Director",
+        dates: "February 2017–Present",
+      },
       { title: "Senior Account Director", dates: "April 2013–June 2015" },
     ],
     description:
@@ -75,28 +78,43 @@ export const JOBS: Job[] = [
   },
   {
     company: "Lockton Companies – Mylo",
-    positions: [{ title: "Assistant Vice President, Integrated Marketing", dates: "2015–2017" }],
+    positions: [
+      {
+        title: "Assistant Vice President, Integrated Marketing",
+        dates: "2015–2017",
+      },
+    ],
     description:
       "Partnered with executive leadership to incubate, launch, and scale Lockton's first direct-to-consumer digital insurance brand. Led brand development, customer experience planning, go-to-market strategy, and cross-functional coordination supporting growth and venture investment.",
   },
   {
     company: "DataCore Marketing",
     location: "later acquired by KBM Group/WPP",
-    positions: [{ title: "Senior Account Director / Account Director", dates: "2008–2009 and 2011–2012" }],
+    positions: [
+      {
+        title: "Senior Account Director / Account Director",
+        dates: "2008–2009 and 2011–2012",
+      },
+    ],
     description:
       "Led strategic client relationships and account teams across healthcare and life sciences. Returned during a major ownership transition to help preserve client confidence, service continuity, and operational stability.",
   },
   {
     company: "Hallmark Business Connections / Hallmark Loyalty Marketing",
     positions: [
-      { title: "Senior Key Account Manager / Manager, Relationship Marketing", dates: "2000–2005 and 2009–2010" },
+      {
+        title: "Senior Key Account Manager / Manager, Relationship Marketing",
+        dates: "2000–2005 and 2009–2010",
+      },
     ],
     description:
       "Developed and led large-scale customer engagement and loyalty programs for national brands. Secured more than $13 million in first-year new business and helped create programs that strengthened customer retention and generated measurable revenue impact.",
   },
   {
     company: "Cerner Corporation",
-    positions: [{ title: "Senior Team Lead, Regional Marketing", dates: "2005–2007" }],
+    positions: [
+      { title: "Senior Team Lead, Regional Marketing", dates: "2005–2007" },
+    ],
     description:
       "Led a team of regional marketing managers and partnered with senior sales and marketing leadership to position healthcare technology solutions for hospital systems and support sales effectiveness.",
   },
