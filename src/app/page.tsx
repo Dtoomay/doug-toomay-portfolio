@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { SUMMARY } from "@/lib/resume";
 import { FULL_NAME, JOB_TITLE, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  description: `${SITE_NAME} (${FULL_NAME}) — ${JOB_TITLE}. Official portfolio and professional profile.`,
+  description: `${SITE_NAME} (${FULL_NAME}) is ${JOB_TITLE} at Bernstein-Rein Advertising in Kansas City, with 25+ years in marketing, strategy, and business leadership.`,
   alternates: {
     canonical: "/",
   },
@@ -24,6 +26,23 @@ export default function Home() {
         <p className="text-sm font-medium tracking-[0.2em] text-white/80 sm:text-base">
           VICE PRESIDENT, GROUP ACCOUNT DIRECTOR
         </p>
+        <p className="max-w-xl text-lg leading-8 text-white/80">
+          {SUMMARY.short}
+        </p>
+        <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href="/about"
+            className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-white/90"
+          >
+            About Doug
+          </Link>
+          <Link
+            href="/experience"
+            className="rounded-full border border-white/40 px-6 py-2.5 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-white/10"
+          >
+            View Experience
+          </Link>
+        </div>
       </main>
     </div>
   );

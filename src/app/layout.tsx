@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
+import { toJsonLd } from "@/lib/jsonld";
+import { CORE_COMPETENCIES, EDUCATION } from "@/lib/resume";
 import { FULL_NAME, JOB_TITLE, SITE_NAME, SITE_URL, SOCIAL_LINKS } from "@/lib/site";
 import "./globals.css";
 
@@ -30,6 +32,10 @@ export const metadata: Metadata = {
     "Douglas Toomay",
     "Doug Toomay portfolio",
     "Douglas Toomay portfolio",
+    "Doug Toomay Bernstein-Rein",
+    "Doug Toomay Kansas City",
+    "Doug Toomay marketing executive",
+    "Douglas Toomay Lenexa Kansas",
   ],
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
@@ -62,6 +68,19 @@ const personJsonLd = {
   url: SITE_URL,
   jobTitle: JOB_TITLE,
   description,
+  worksFor: {
+    "@type": "Organization",
+    name: "Bernstein-Rein Advertising",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: EDUCATION.school,
+  },
+  knowsAbout: CORE_COMPETENCIES.map((competency) => competency.name),
+  homeLocation: {
+    "@type": "Place",
+    name: "Lenexa, Kansas",
+  },
   sameAs: SOCIAL_LINKS.map((link) => link.url),
 };
 
@@ -74,7 +93,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: toJsonLd(personJsonLd) }}
         />
         <div className="fixed inset-0 -z-10">
           <img
