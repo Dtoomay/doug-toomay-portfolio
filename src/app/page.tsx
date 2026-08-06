@@ -1,14 +1,7 @@
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-1 flex-col items-center justify-center overflow-hidden">
-      <img
-        src="/hero-placeholder.svg"
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover"
-      />
-      <div className="absolute inset-0 bg-black/45" />
-
-      <main className="relative flex w-full max-w-3xl flex-col items-center gap-6 px-8 py-32 text-center">
+    <div className="flex flex-1 flex-col items-center justify-center">
+      <main className="flex w-full max-w-3xl flex-col items-center gap-6 px-8 py-32 text-center">
         <img
           src="/profile-placeholder.svg"
           alt="Doug Toomay"
