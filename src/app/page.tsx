@@ -15,7 +15,7 @@ export default function Home() {
     <div className="flex flex-1 flex-col items-center justify-center">
       <main className="flex w-full max-w-3xl flex-col items-center gap-6 px-8 py-32 text-center">
         <img
-          src="/profile-placeholder.svg"
+          src="/doug-toomay-douglas-toomay-headshot-white.jpeg"
           alt="Doug Toomay"
           className="h-32 w-32 rounded-full border-4 border-white/90 object-cover shadow-lg"
         />
